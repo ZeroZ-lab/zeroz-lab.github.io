@@ -1,24 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zeroz-lab.github.io</id>
-    <title>ZeroZ-Lab</title>
-    <updated>2020-12-28T14:56:36.702Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://zeroz-lab.github.io"/>
-    <link rel="self" href="https://zeroz-lab.github.io/atom.xml"/>
-    <subtitle>What i cannot create i do not understand</subtitle>
-    <logo>https://zeroz-lab.github.io/images/avatar.png</logo>
-    <icon>https://zeroz-lab.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, ZeroZ-Lab</rights>
-    <entry>
-        <title type="html"><![CDATA[Promise使用、实现与扩展]]></title>
-        <id>https://zeroz-lab.github.io/post/promise-shi-yong-shi-xian-yu-kuo-zhan/</id>
-        <link href="https://zeroz-lab.github.io/post/promise-shi-yong-shi-xian-yu-kuo-zhan/">
-        </link>
-        <updated>2020-12-28T14:50:20.000Z</updated>
-        <summary type="html"><![CDATA[<p>Promise是处理JavaScript异步代码的一种方式，本文通过使用、实现与扩展三个方面完整介绍Promise。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Promise是处理JavaScript异步代码的一种方式，本文通过使用、实现与扩展三个方面完整介绍Promise。</p>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Promise使用、实现与扩展 | ZeroZ-Lab</title>
+<link rel="shortcut icon" href="https://zeroz-lab.github.io/favicon.ico?v=1609167359774">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zeroz-lab.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Promise使用、实现与扩展 | ZeroZ-Lab - Atom Feed" href="https://zeroz-lab.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Promise是处理JavaScript异步代码的一种方式，本文通过使用、实现与扩展三个方面完整介绍Promise。
+
+介绍
+promise是一个代理对象，当代理的值被创建时可能时未知的。它允许你为异步操作的成功或者失败分别绑定相应的处理方..." />
+    <meta name="keywords" content="JavaScript,Promise" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zeroz-lab.github.io">
+  <img class="avatar" src="https://zeroz-lab.github.io/images/avatar.png?v=1609167359774" alt="">
+  </a>
+  <h1 class="site-title">
+    ZeroZ-Lab
+  </h1>
+  <p class="site-description">
+    What i cannot create i do not understand
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Promise使用、实现与扩展
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-12-28
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://zeroz-lab.github.io/tag/qpp5VGqLa/" class="post-tag">
+                  # JavaScript
+                </a>
+              
+                <a href="https://zeroz-lab.github.io/tag/0OVZfe3N8Y/" class="post-tag">
+                  # Promise
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://zeroz-lab.github.io/post-images/promise-shi-yong-shi-xian-yu-kuo-zhan.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>Promise是处理JavaScript异步代码的一种方式，本文通过使用、实现与扩展三个方面完整介绍Promise。</p>
 <!-- more -->
 <h2 id="介绍">介绍</h2>
 <p>promise是一个代理对象，当代理的值被创建时可能时未知的。它允许你为异步操作的成功或者失败分别绑定相应的处理方法。</p>
@@ -143,18 +226,105 @@ wait(200)
 <p>参考前面链式调用。</p>
 <h3 id="promiseprototypefinally">Promise.prototype.finally()</h3>
 <p><code>finally()</code>返回一个promise，无论fullfilled或者rejected，都会执行指定的回调函数。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✏️小抄：请求并发控制]]></title>
-        <id>https://zeroz-lab.github.io/post/qing-qiu-bing-fa-kong-zhi/</id>
-        <link href="https://zeroz-lab.github.io/post/qing-qiu-bing-fa-kong-zhi/">
-        </link>
-        <updated>2020-12-28T02:25:28.000Z</updated>
-        <summary type="html"><![CDATA[<p>请求并发控制</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>请求并发控制</p>
-<!-- more -->
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BB%8B%E7%BB%8D">介绍</a></li>
+<li><a href="#%E9%87%8D%E8%A6%81%E8%A7%84%E5%88%99">重要规则</a></li>
+<li><a href="#%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8">链式调用</a></li>
+<li><a href="#%E9%94%99%E8%AF%AF%E6%8D%95%E6%8D%89">错误捕捉</a></li>
+<li><a href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0">构造函数</a></li>
+<li><a href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95">静态方法</a>
+<ul>
+<li><a href="#promisealliterable">Promise.all(iterable)</a></li>
+<li><a href="#promiseallsettled">Promise.allSettled()</a></li>
+<li><a href="#promiseany">Promise.any()</a></li>
+<li><a href="#promiserace">Promise.race()</a></li>
+<li><a href="#promiseresolve">Promise.resolve()</a></li>
+<li><a href="#promisereject">Promise.reject()</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95">实例方法</a>
+<ul>
+<li><a href="#promiseprototypecatch">Promise.prototype.catch()</a></li>
+<li><a href="#promiseprototypethen">Promise.prototype.then()</a></li>
+<li><a href="#promiseprototypefinally">Promise.prototype.finally()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zeroz-lab.github.io/post/qing-qiu-bing-fa-kong-zhi/">
+              <h3 class="post-title">
+                ✏️小抄：请求并发控制
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zeroz-lab.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
